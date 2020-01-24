@@ -7,7 +7,7 @@ import { ResponseComponent } from './response/response.component';
 
 
 const appRoutes: Routes = [
-  { path: 'poll/:id', component: ResponseComponent }
+  //{ path: 'poll/:id', component: ResponseComponent }
 ]
 @NgModule({
   declarations: [
