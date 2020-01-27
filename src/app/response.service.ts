@@ -10,7 +10,7 @@ export class ResponseService {
   constructor(private http: HttpClient) { }
   private responseLink = 'https://polls-result.herokuapp.com/api/v1/responses';
 
-  recordResponse(result: Response): Observable<any>{
-    return this.http.post<any>(this.responseLink, result);
+  recordResponse(result): Observable<Response>{
+    return this.http.post<Response>(this.responseLink, result);
   }
 }

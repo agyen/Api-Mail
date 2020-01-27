@@ -1,5 +1,5 @@
 export interface Response{
-    response_id: number,
-    options_id: number,
+    response_id: String,
+    options_id: String,
     suggestions: String
 }
