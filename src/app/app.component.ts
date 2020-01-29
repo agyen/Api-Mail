@@ -17,10 +17,8 @@ export class AppComponent implements OnInit{
     }
 
     responses={
-      options_id:'',
-      poll_id: '',
-      response_id: '',
-      suggestions:''
+      option_id:'',
+      poll_id: ''
     };
 
      ngOnInit(){
@@ -32,10 +30,8 @@ export class AppComponent implements OnInit{
      // const options_id =params['options_id'];
      // console.log(poll_id);
      // console.log(options_id);
-     this.responses.options_id = params.options_id
+     this.responses.option_id = params.options_id
      this.responses.poll_id = params.poll_id
-     this.responses.response_id= params.response_id
-     this.responses.suggestions = params.suggestions
      // this.responses.suggestions = params.suggestions        // this.responses = params
     
       this.responseService.recordResponse(this.responses).subscribe(response => {
