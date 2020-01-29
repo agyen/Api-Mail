@@ -30,7 +30,7 @@ export class AppComponent implements OnInit{
      // const options_id =params['options_id'];
      // console.log(poll_id);
      // console.log(options_id);
-     this.responses.option_id = params.options_id
+     this.responses.option_id = params.option_id
      this.responses.poll_id = params.poll_id
      // this.responses.suggestions = params.suggestions        // this.responses = params
     
